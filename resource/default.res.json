@@ -1,23 +1,585 @@
 {
-	"groups":[
-	{
-		"keys":"bg_jpg,egret_icon_png,description_json",
-		"name":"preload"
-	}],
-	"resources":[
-	{
-		"name":"bg_jpg",
-		"type":"image",
-		"url":"assets/bg.jpg"
-	},
-	{
-		"name":"egret_icon_png",
-		"type":"image",
-		"url":"assets/egret_icon.png"
-	},
-	{
-		"name":"description_json",
-		"type":"json",
-		"url":"config/description.json"
-	}]
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,Ground_png,0008_png,0019_png,0009_png,0010_png,0011_png,0012_png,0013_png,0014_png,0015_png,0016_png,0017_png,0018_png,0029_png,0030_png,0031_png,0032_png,0033_png,0034_png,0024_png,0025_png,0026_png,0027_png,0028_png,0024_2_png,0025_2_png,0026_2_png,0027_2_png,0028_2_png,0029_2_png,0030_2_png,0031_2_png,0032_2_png,0033_2_png,0034_2_png,BackGround_jpg,grass_top_png,stone_png,stonebrick_png,stonebrick_cracked_png,stonebrick_mossy_png,gold_ore_png,leaves_spruce_opaque_png,mycelium_top_png,diamond_ore_png,furnace_side_png,40e5addda144ad34f4c50016d4a20cf430ad8574_jpg,7629f41b9d16fdfa6017417fb08f8c5495ee7b6b_jpg,cactus_top_png,d8e5e754564e9258354e017f9882d158cdbf4e74_jpg,f9fe2530e924b899f546fea96a061d950b7bf674_jpg,hardened_clay_stained_green_with_red_flower_png,hardened_clay_stained_green_with_tree_png,hardened_clay_stained_green_with_white_flower_png,hardened_clay_stained_green_with_yellow_flower_png,pumpkin_png,00082_png,00092_png,00102_png,00112_png,00122_png,00132_png,00142_png,00152_png,00162_png,00172_png,00182_png,00192_png,00242_png,0024_22_png,00252_png,0025_22_png,00262_png,0026_22_png,00272_png,0027_22_png,00282_png,0028_22_png,00292_png,0029_22_png,00302_png,0030_22_png,00312_png,0031_22_png,00322_png,0032_22_png,00332_png,0033_22_png,00342_png,0034_22_png,40e5addda144ad34f4c50016d4a20cf430ad85742_jpg,7629f41b9d16fdfa6017417fb08f8c5495ee7b6b2_jpg,BackGround2_jpg,cactus_top2_png,d8e5e754564e9258354e017f9882d158cdbf4e742_jpg,diamond_ore2_png,f9fe2530e924b899f546fea96a061d950b7bf6742_jpg,furnace_side2_png,gold_ore2_png,grass_top2_png,Ground2_png,hardened_clay_stained_green_with_red_flower2_png,hardened_clay_stained_green_with_tree2_png,hardened_clay_stained_green_with_white_flower2_png,hardened_clay_stained_green_with_yellow_flower2_png,leaves_spruce_opaque2_png,mycelium_top2_png,pumpkin2_png,stone2_png,stonebrick2_png,stonebrick_cracked2_png,stonebrick_mossy2_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_jpg",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egret_icon_png",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "Ground_png",
+			"type": "image",
+			"url": "assets/Ground.png"
+		},
+		{
+			"name": "0008_png",
+			"type": "image",
+			"url": "assets/0008.png"
+		},
+		{
+			"name": "0019_png",
+			"type": "image",
+			"url": "assets/0019.png"
+		},
+		{
+			"name": "0009_png",
+			"type": "image",
+			"url": "assets/0009.png"
+		},
+		{
+			"name": "0010_png",
+			"type": "image",
+			"url": "assets/0010.png"
+		},
+		{
+			"name": "0011_png",
+			"type": "image",
+			"url": "assets/0011.png"
+		},
+		{
+			"name": "0012_png",
+			"type": "image",
+			"url": "assets/0012.png"
+		},
+		{
+			"name": "0013_png",
+			"type": "image",
+			"url": "assets/0013.png"
+		},
+		{
+			"name": "0014_png",
+			"type": "image",
+			"url": "assets/0014.png"
+		},
+		{
+			"name": "0015_png",
+			"type": "image",
+			"url": "assets/0015.png"
+		},
+		{
+			"name": "0016_png",
+			"type": "image",
+			"url": "assets/0016.png"
+		},
+		{
+			"name": "0017_png",
+			"type": "image",
+			"url": "assets/0017.png"
+		},
+		{
+			"name": "0018_png",
+			"type": "image",
+			"url": "assets/0018.png"
+		},
+		{
+			"name": "0029_png",
+			"type": "image",
+			"url": "assets/0029.png"
+		},
+		{
+			"name": "0030_png",
+			"type": "image",
+			"url": "assets/0030.png"
+		},
+		{
+			"name": "0031_png",
+			"type": "image",
+			"url": "assets/0031.png"
+		},
+		{
+			"name": "0032_png",
+			"type": "image",
+			"url": "assets/0032.png"
+		},
+		{
+			"name": "0033_png",
+			"type": "image",
+			"url": "assets/0033.png"
+		},
+		{
+			"name": "0034_png",
+			"type": "image",
+			"url": "assets/0034.png"
+		},
+		{
+			"name": "0024_png",
+			"type": "image",
+			"url": "assets/0024.png"
+		},
+		{
+			"name": "0025_png",
+			"type": "image",
+			"url": "assets/0025.png"
+		},
+		{
+			"name": "0026_png",
+			"type": "image",
+			"url": "assets/0026.png"
+		},
+		{
+			"name": "0027_png",
+			"type": "image",
+			"url": "assets/0027.png"
+		},
+		{
+			"name": "0028_png",
+			"type": "image",
+			"url": "assets/0028.png"
+		},
+		{
+			"name": "0024_2_png",
+			"type": "image",
+			"url": "assets/0024_2.png"
+		},
+		{
+			"name": "0025_2_png",
+			"type": "image",
+			"url": "assets/0025_2.png"
+		},
+		{
+			"name": "0026_2_png",
+			"type": "image",
+			"url": "assets/0026_2.png"
+		},
+		{
+			"name": "0027_2_png",
+			"type": "image",
+			"url": "assets/0027_2.png"
+		},
+		{
+			"name": "0028_2_png",
+			"type": "image",
+			"url": "assets/0028_2.png"
+		},
+		{
+			"name": "0029_2_png",
+			"type": "image",
+			"url": "assets/0029_2.png"
+		},
+		{
+			"name": "0030_2_png",
+			"type": "image",
+			"url": "assets/0030_2.png"
+		},
+		{
+			"name": "0031_2_png",
+			"type": "image",
+			"url": "assets/0031_2.png"
+		},
+		{
+			"name": "0032_2_png",
+			"type": "image",
+			"url": "assets/0032_2.png"
+		},
+		{
+			"name": "0033_2_png",
+			"type": "image",
+			"url": "assets/0033_2.png"
+		},
+		{
+			"name": "0034_2_png",
+			"type": "image",
+			"url": "assets/0034_2.png"
+		},
+		{
+			"name": "BackGround_jpg",
+			"type": "image",
+			"url": "assets/BackGround.jpg"
+		},
+		{
+			"name": "grass_top_png",
+			"type": "image",
+			"url": "assets/grass_top.png"
+		},
+		{
+			"name": "stone_png",
+			"type": "image",
+			"url": "assets/stone.png"
+		},
+		{
+			"name": "stonebrick_png",
+			"type": "image",
+			"url": "assets/stonebrick.png"
+		},
+		{
+			"name": "stonebrick_cracked_png",
+			"type": "image",
+			"url": "assets/stonebrick_cracked.png"
+		},
+		{
+			"name": "stonebrick_mossy_png",
+			"type": "image",
+			"url": "assets/stonebrick_mossy.png"
+		},
+		{
+			"name": "gold_ore_png",
+			"type": "image",
+			"url": "assets/gold_ore.png"
+		},
+		{
+			"name": "leaves_spruce_opaque_png",
+			"type": "image",
+			"url": "assets/leaves_spruce_opaque.png"
+		},
+		{
+			"name": "mycelium_top_png",
+			"type": "image",
+			"url": "assets/mycelium_top.png"
+		},
+		{
+			"name": "diamond_ore_png",
+			"type": "image",
+			"url": "assets/diamond_ore.png"
+		},
+		{
+			"name": "furnace_side_png",
+			"type": "image",
+			"url": "assets/furnace_side.png"
+		},
+		{
+			"name": "40e5addda144ad34f4c50016d4a20cf430ad8574_jpg",
+			"type": "image",
+			"url": "assets/40e5addda144ad34f4c50016d4a20cf430ad8574.jpg"
+		},
+		{
+			"name": "7629f41b9d16fdfa6017417fb08f8c5495ee7b6b_jpg",
+			"type": "image",
+			"url": "assets/7629f41b9d16fdfa6017417fb08f8c5495ee7b6b.jpg"
+		},
+		{
+			"name": "cactus_top_png",
+			"type": "image",
+			"url": "assets/cactus_top.png"
+		},
+		{
+			"name": "d8e5e754564e9258354e017f9882d158cdbf4e74_jpg",
+			"type": "image",
+			"url": "assets/d8e5e754564e9258354e017f9882d158cdbf4e74.jpg"
+		},
+		{
+			"name": "f9fe2530e924b899f546fea96a061d950b7bf674_jpg",
+			"type": "image",
+			"url": "assets/f9fe2530e924b899f546fea96a061d950b7bf674.jpg"
+		},
+		{
+			"name": "hardened_clay_stained_green_with_red_flower_png",
+			"type": "image",
+			"url": "assets/hardened_clay_stained_green_with_red_flower.png"
+		},
+		{
+			"name": "hardened_clay_stained_green_with_tree_png",
+			"type": "image",
+			"url": "assets/hardened_clay_stained_green_with_tree.png"
+		},
+		{
+			"name": "hardened_clay_stained_green_with_white_flower_png",
+			"type": "image",
+			"url": "assets/hardened_clay_stained_green_with_white_flower.png"
+		},
+		{
+			"name": "hardened_clay_stained_green_with_yellow_flower_png",
+			"type": "image",
+			"url": "assets/hardened_clay_stained_green_with_yellow_flower.png"
+		},
+		{
+			"name": "pumpkin_png",
+			"type": "image",
+			"url": "assets/pumpkin.png"
+		},
+		{
+			"name": "00082_png",
+			"type": "image",
+			"url": "assets/0008.png"
+		},
+		{
+			"name": "00092_png",
+			"type": "image",
+			"url": "assets/0009.png"
+		},
+		{
+			"name": "00102_png",
+			"type": "image",
+			"url": "assets/0010.png"
+		},
+		{
+			"name": "00112_png",
+			"type": "image",
+			"url": "assets/0011.png"
+		},
+		{
+			"name": "00122_png",
+			"type": "image",
+			"url": "assets/0012.png"
+		},
+		{
+			"name": "00132_png",
+			"type": "image",
+			"url": "assets/0013.png"
+		},
+		{
+			"name": "00142_png",
+			"type": "image",
+			"url": "assets/0014.png"
+		},
+		{
+			"name": "00152_png",
+			"type": "image",
+			"url": "assets/0015.png"
+		},
+		{
+			"name": "00162_png",
+			"type": "image",
+			"url": "assets/0016.png"
+		},
+		{
+			"name": "00172_png",
+			"type": "image",
+			"url": "assets/0017.png"
+		},
+		{
+			"name": "00182_png",
+			"type": "image",
+			"url": "assets/0018.png"
+		},
+		{
+			"name": "00192_png",
+			"type": "image",
+			"url": "assets/0019.png"
+		},
+		{
+			"name": "00242_png",
+			"type": "image",
+			"url": "assets/0024.png"
+		},
+		{
+			"name": "0024_22_png",
+			"type": "image",
+			"url": "assets/0024_2.png"
+		},
+		{
+			"name": "00252_png",
+			"type": "image",
+			"url": "assets/0025.png"
+		},
+		{
+			"name": "0025_22_png",
+			"type": "image",
+			"url": "assets/0025_2.png"
+		},
+		{
+			"name": "00262_png",
+			"type": "image",
+			"url": "assets/0026.png"
+		},
+		{
+			"name": "0026_22_png",
+			"type": "image",
+			"url": "assets/0026_2.png"
+		},
+		{
+			"name": "00272_png",
+			"type": "image",
+			"url": "assets/0027.png"
+		},
+		{
+			"name": "0027_22_png",
+			"type": "image",
+			"url": "assets/0027_2.png"
+		},
+		{
+			"name": "00282_png",
+			"type": "image",
+			"url": "assets/0028.png"
+		},
+		{
+			"name": "0028_22_png",
+			"type": "image",
+			"url": "assets/0028_2.png"
+		},
+		{
+			"name": "00292_png",
+			"type": "image",
+			"url": "assets/0029.png"
+		},
+		{
+			"name": "0029_22_png",
+			"type": "image",
+			"url": "assets/0029_2.png"
+		},
+		{
+			"name": "00302_png",
+			"type": "image",
+			"url": "assets/0030.png"
+		},
+		{
+			"name": "0030_22_png",
+			"type": "image",
+			"url": "assets/0030_2.png"
+		},
+		{
+			"name": "00312_png",
+			"type": "image",
+			"url": "assets/0031.png"
+		},
+		{
+			"name": "0031_22_png",
+			"type": "image",
+			"url": "assets/0031_2.png"
+		},
+		{
+			"name": "00322_png",
+			"type": "image",
+			"url": "assets/0032.png"
+		},
+		{
+			"name": "0032_22_png",
+			"type": "image",
+			"url": "assets/0032_2.png"
+		},
+		{
+			"name": "00332_png",
+			"type": "image",
+			"url": "assets/0033.png"
+		},
+		{
+			"name": "0033_22_png",
+			"type": "image",
+			"url": "assets/0033_2.png"
+		},
+		{
+			"name": "00342_png",
+			"type": "image",
+			"url": "assets/0034.png"
+		},
+		{
+			"name": "0034_22_png",
+			"type": "image",
+			"url": "assets/0034_2.png"
+		},
+		{
+			"name": "40e5addda144ad34f4c50016d4a20cf430ad85742_jpg",
+			"type": "image",
+			"url": "assets/40e5addda144ad34f4c50016d4a20cf430ad8574.jpg"
+		},
+		{
+			"name": "7629f41b9d16fdfa6017417fb08f8c5495ee7b6b2_jpg",
+			"type": "image",
+			"url": "assets/7629f41b9d16fdfa6017417fb08f8c5495ee7b6b.jpg"
+		},
+		{
+			"name": "BackGround2_jpg",
+			"type": "image",
+			"url": "assets/BackGround.jpg"
+		},
+		{
+			"name": "cactus_top2_png",
+			"type": "image",
+			"url": "assets/cactus_top.png"
+		},
+		{
+			"name": "d8e5e754564e9258354e017f9882d158cdbf4e742_jpg",
+			"type": "image",
+			"url": "assets/d8e5e754564e9258354e017f9882d158cdbf4e74.jpg"
+		},
+		{
+			"name": "diamond_ore2_png",
+			"type": "image",
+			"url": "assets/diamond_ore.png"
+		},
+		{
+			"name": "f9fe2530e924b899f546fea96a061d950b7bf6742_jpg",
+			"type": "image",
+			"url": "assets/f9fe2530e924b899f546fea96a061d950b7bf674.jpg"
+		},
+		{
+			"name": "furnace_side2_png",
+			"type": "image",
+			"url": "assets/furnace_side.png"
+		},
+		{
+			"name": "gold_ore2_png",
+			"type": "image",
+			"url": "assets/gold_ore.png"
+		},
+		{
+			"name": "grass_top2_png",
+			"type": "image",
+			"url": "assets/grass_top.png"
+		},
+		{
+			"name": "Ground2_png",
+			"type": "image",
+			"url": "assets/Ground.png"
+		},
+		{
+			"name": "hardened_clay_stained_green_with_red_flower2_png",
+			"type": "image",
+			"url": "assets/hardened_clay_stained_green_with_red_flower.png"
+		},
+		{
+			"name": "hardened_clay_stained_green_with_tree2_png",
+			"type": "image",
+			"url": "assets/hardened_clay_stained_green_with_tree.png"
+		},
+		{
+			"name": "hardened_clay_stained_green_with_white_flower2_png",
+			"type": "image",
+			"url": "assets/hardened_clay_stained_green_with_white_flower.png"
+		},
+		{
+			"name": "hardened_clay_stained_green_with_yellow_flower2_png",
+			"type": "image",
+			"url": "assets/hardened_clay_stained_green_with_yellow_flower.png"
+		},
+		{
+			"name": "leaves_spruce_opaque2_png",
+			"type": "image",
+			"url": "assets/leaves_spruce_opaque.png"
+		},
+		{
+			"name": "mycelium_top2_png",
+			"type": "image",
+			"url": "assets/mycelium_top.png"
+		},
+		{
+			"name": "pumpkin2_png",
+			"type": "image",
+			"url": "assets/pumpkin.png"
+		},
+		{
+			"name": "stone2_png",
+			"type": "image",
+			"url": "assets/stone.png"
+		},
+		{
+			"name": "stonebrick2_png",
+			"type": "image",
+			"url": "assets/stonebrick.png"
+		},
+		{
+			"name": "stonebrick_cracked2_png",
+			"type": "image",
+			"url": "assets/stonebrick_cracked.png"
+		},
+		{
+			"name": "stonebrick_mossy2_png",
+			"type": "image",
+			"url": "assets/stonebrick_mossy.png"
+		}
+	]
 }
